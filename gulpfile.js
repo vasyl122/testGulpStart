@@ -49,7 +49,7 @@ function clean() {
 function html() {
   return gulp.src(paths.html.src)
     //.pipe(gulppug())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false  }))
     .pipe(size({
       showFiles: true
     }))
